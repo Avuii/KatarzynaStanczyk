@@ -82,7 +82,7 @@ const SKILLS = {
 
 export function SkillsSection() {
   return (
-    <section className="relative px-6 py-32">
+    <section className="relative px-4 sm:px-6 py-20 sm:py-32">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-4xl md:text-5xl font-light text-white mb-6 text-center"
@@ -106,7 +106,7 @@ export function SkillsSection() {
 
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(SKILLS).map(([category, items], index) => (
             <motion.div
               key={category}
